@@ -11,7 +11,6 @@
     </section>  
     <img id="mainLogo" src="../images/book-logo.png">   
     <div id="totalListNum" class="marginPlus">
-      <span>Total number of scriptures in list: </span><span class="spanRed">{{lengthss}}</span>
     </div>
     <div id="addScriptureForm">
         <h1>Add more scripure!</h1>

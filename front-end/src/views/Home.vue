@@ -40,7 +40,16 @@ data() {
         book: "",
         topic: "",
        }
-  },   
+  }, 
+
+    async created() {
+    try {
+      let response = await axios.get('/api/users');
+      this.$root.$data.user = response.data.user;
+    } catch (error) {
+      this.$root.$data.user = null;
+    }
+  },
 
   methods: {
     expendScriptureList(){
